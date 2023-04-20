@@ -16,5 +16,8 @@ data:
 	docker exec laravel-docker bash -c "php artisan db:seed"
 start:
 	docker exec laravel-docker bash -c "php artisan serve"
+	
+categories:
+	docker exec laravel-docker bash -c "php artisan make:model Categorie --migration --controller --api"
 
 
